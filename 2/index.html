@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chào Ngày Mới Vui Vẻ! ✨</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Animated background with glowing blobs -->
+    <div class="background-container">
+      <div class="glow-blob blob-1"></div>
+      <div class="glow-blob blob-2"></div>
+      <div class="glow-blob blob-3"></div>
+    </div>
+
+    <!-- Canvas for particle/confetti effects -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Main Card App -->
+    <main class="app-container">
+      <div class="glass-card">
+        <!-- Section 1: Initial Screen with Button -->
+        <section id="welcome-section" class="welcome-section">
+          <div>
+            <h2 class="title-main">Chào Buổi Sáng</h2>
+            <h1 class="title-sub">Khởi đầu một ngày tuyệt vời của bạn</h1>
+          </div>
+
+          <button
+            id="start-btn"
+            class="cta-button"
+            aria-label="Bấm để nhận lời chúc ngày mới"
+          >
+            Mở Quà Ngày Mới <span class="sparkle-icon">✨</span>
+          </button>
+        </section>
+
+        <!-- Section 2: Happy New Day Greeting & Motivational Quote (Hidden initially) -->
+        <section id="greeting-section" class="greeting-section hidden">
+          <div>
+            <h2 class="greeting-text">Ngày Mới Rực Rỡ Nhé! ☀️</h2>
+            <p class="greeting-desc">
+              Chúc Trang một ngày mới ngập tràn niềm vui, công việc/học tập siêu
+              mượt và luôn cười tươi nhé! Cố lên nào! 💪✨
+            </p>
+          </div>
+
+          <!-- Quote Card -->
+          <div class="quote-card">
+            <p id="quote-text" class="quote-text">
+              "Hãy bắt đầu ngày mới bằng một nụ cười..."
+            </p>
+            <p id="quote-author" class="quote-author">— Khuyết Danh</p>
+          </div>
+
+          <!-- Reset Button -->
+          <button
+            id="back-btn"
+            class="secondary-btn"
+            aria-label="Quay lại màn hình chính"
+          >
+            Nhận Lời Chúc Khác
+          </button>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
