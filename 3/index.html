@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi Tặng Huyền Trang 🌸</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for romantic and premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Canvas for floating petals, sparkles, and hearts -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Ambient Music Toggle -->
+    <button id="music-btn" aria-label="Bật/Tắt nhạc">
+        <span class="icon">🎵</span>
+        <span class="text">Bật Nhạc Thư Giãn</span>
+    </button>
+
+    <div class="app-container">
+        <!-- Interactive Envelope Container -->
+        <div class="envelope-container" id="envelope-section">
+            <div class="envelope-wrapper" id="envelope-wrapper">
+                <div class="envelope" id="envelope-element">
+                    <div class="flap"></div>
+                    <div class="pocket"></div>
+                    <div class="letter">
+                        <div class="heart-seal">❤️</div>
+                        <h2 class="envelope-title">Gửi Huyền Trang</h2>
+                        <p class="envelope-tip">Nhấp chuột để mở món quà bí mật</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Magical Bouquet and Card Display (Initially Hidden) -->
+        <div class="main-content hidden" id="main-content-section">
+            <div class="bouquet-panel">
+                <div class="glow-ring"></div>
+                <div class="bouquet-frame">
+                    <img src="flower_bouquet.jpg" alt="Bó hoa xinh tươi tặng Huyền Trang" class="bouquet-img">
+                </div>
+                <!-- Shimmering particles emanating from the bouquet -->
+                <div class="bouquet-sparkles" id="bouquet-sparkles"></div>
+            </div>
+
+            <div class="card-panel">
+                <div class="card-glass">
+                    <div class="card-header">
+                        <span class="sparkle-icon">✨</span>
+                        <h1 class="card-title">Tặng Huyền Trang</h1>
+                        <span class="sparkle-icon">✨</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="message-line"><b>H</b>uyền diệu nụ cười nghiêng nắng sớm,</p>
+                        <p class="message-line"><b>T</b>rang đài thanh nhã tựa mây bồng.</p>
+                        <p class="message-line"><b>H</b>ương sắc ngàn hoa khoe thắm nồng,</p>
+                        <p class="message-line"><b>T</b>rọn vẹn niềm vui thỏa ước mong. 🌸</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="action-btn" id="shower-btn">Tạo Mưa Hoa Rực Rỡ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script loading -->
+    <script src="script.js"></script>
+</body>
+</html>
